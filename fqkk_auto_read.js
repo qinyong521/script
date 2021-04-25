@@ -9,7 +9,7 @@
 ======== qx ========
 [rewrite_local]
 ^http://.+/(task/read|jump)\? url script-response-header https://raw.githubusercontent.com/age174/-/main/fqkk_auto_read.js
-^https?://mp\.weixin\.qq\.com/s.+?k=feizao url response-body var ua = navigator.userAgent; response-body var ua = navigator.userAgent; setTimeout(()=>window.history.back(),9000);
+https?://mp.weixin.qq.com/s.+ url response-body </script> response-body ; setTimeout(()=>window.history.back(),9000); </script>
 
 ======== surge for mac ========
 [Script]
